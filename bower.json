@@ -1,0 +1,20 @@
+{
+  "name": "angular-material-starter",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "solodynamo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/solodynamo/A.M.S",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.1"
+  }
+}
