@@ -1,0 +1,31 @@
+{
+  "name": "angular-material-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodynamo/A.M.S.git"
+  },
+  "author": "solodynamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solodynamo/A.M.S/issues"
+  },
+  "homepage": "https://github.com/solodynamo/A.M.S#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular-material": "github:angular/bower-material@^1.1.1"
+    }
+  },
+  "bower-install": "bower install --allow-root"
+}
