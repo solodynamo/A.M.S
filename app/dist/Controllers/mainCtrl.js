@@ -1,7 +1,7 @@
 (function(){
 
   angular
-       .module('app')
+       .module('BPIT')
        .controller('MainController', [
           '$mdSidenav', '$mdBottomSheet', '$log', '$q', '$state', '$mdToast',
           MainController

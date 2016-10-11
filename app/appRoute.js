@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('bpit', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3', 'app'])
+angular.module('BPIT', ['ngAnimate', 'ngCookies', 'ngTouch',
+  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3'])
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
