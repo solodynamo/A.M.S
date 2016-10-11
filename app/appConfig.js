@@ -1,6 +1,6 @@
 (function(){
   'use strict';
 
-  angular.module('BPIT', [ 'ngMaterial' ]);
+  angular.module('BPIT', [ 'ngMaterial' ,'ui.router']);
 
 })();

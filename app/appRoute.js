@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('BPIT', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3'])
+angular.module('BPIT')
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
+
+                      console.log("iside srareas");
     $stateProvider
       .state('home', {
         url: '',
@@ -43,8 +44,8 @@ angular.module('BPIT', ['ngAnimate', 'ngCookies', 'ngTouch',
 
     $mdThemingProvider
       .theme('default')
-        .primaryPalette('grey', {
-          'default': '600'
+        .primaryPalette('teal', {
+          'default': '500'
         })
         .accentPalette('teal', {
           'default': '500'
@@ -80,5 +81,5 @@ angular.module('BPIT', ['ngAnimate', 'ngCookies', 'ngTouch',
       'A700': '#E75753'
     });
 
-    $mdIconProvider.icon('user', 'assets/images/user.svg', 64);
+    
   });
