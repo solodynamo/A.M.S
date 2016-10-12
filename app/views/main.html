@@ -1,11 +1,30 @@
+<style>
+@media (max-width:767px) {
+  .abc {font-size: 14px;}
+}
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+  .abc {font-size: 5px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) {
+  .abc {font-size: 20px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+  .abc {font-size: 60px;}
+}
+</style>
 
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
   <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2">
     <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn"
                href="https://github.com/solodynamo">
-      <h1>BPIT</h1>
+      <h1><img class="img-circle" ng-src="app/logo2.png"></h1>
     </md-button>
   </md-toolbar>
    
@@ -21,20 +40,17 @@
       </md-button>
       <md-divider ng-repeat-end></md-divider>
 </md-sidenav>
-<!--<md-toolbar>
-      
-</md-toolbar>-->
 
 <div layout="column" flex>
     <md-toolbar layout="row" layout-align="center center">
         
         <section layout-align="start center" layout-fill flex>
-            <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu">
+            <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu" flex="20">
                 <i class="material-icons">menu</i>
                 
             </md-button>
         </section>
-     <img class="img-circle" ng-src="app/bpitlogo.svg">
+     <h4 class="abc" flex="80">Bhagwan Parshuram Institute Of Technology</h4>
     </md-toolbar>
 
     <md-content flex class="md-padding page-content">
