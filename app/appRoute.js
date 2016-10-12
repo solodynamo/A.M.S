@@ -44,10 +44,10 @@ angular.module('BPIT')
 
     $mdThemingProvider
       .theme('default')
-        .primaryPalette('teal', {
-          'default': '500'
+        .primaryPalette('purple', {
+          'default': '400'
         })
-        .accentPalette('teal', {
+        .accentPalette('purple', {
           'default': '500'
         })
         .warnPalette('defaultPrimary');
