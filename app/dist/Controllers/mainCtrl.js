@@ -15,17 +15,17 @@
       {
         name: 'Placements',
         icon: 'work',
-        sref: '.placement'
+        sref: '.placements'
       },
       {
         name: 'Examinations',
         icon: 'class',
-        sref: '.exam'
+        sref: '.examinations'
       },
       {
         name: 'Facilities',
         icon: 'accessibility',
-        sref: '.facility'
+        sref: '.facilities'
       },
       {
         name: 'Departments',
@@ -35,7 +35,7 @@
       {
         name: 'Student Life',
         icon: 'face',
-        sref: '.studentLife'
+        sref: '.studentlife'
       },
       {
         name: 'Recruitment',
