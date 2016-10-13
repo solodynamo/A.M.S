@@ -1,31 +1,40 @@
 <style>
+    
 @media (max-width:767px) {
   .abc {font-size: 14px;},
-  #header{height:1px;}
+  
+}
+@media (max-width:767px) {
+  #menuIcon {    
+    padding-right: 40px;
+    padding-top: 11px
+    }
+  
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
-  .abc {font-size: 15px; padding-left:3px;},
-  #header{height:1px;}
+  .abc {font-size: 30px; padding-left:3px;}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992px) {
-  .abc {font-size: 20px;},
-  #header{height:1px;}
+  .abc {font-size: 20px;}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) {
-  .abc {font-size: 60px;},
-  #header{height:1px;}
+  .abc {font-size: 30px;}
 }
+@media (min-width:1200px) {
+  #header {height: 10px;}
+}
+
 </style>
 
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
-  <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2" id="header">
+  <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2" >
     <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn"
                href="https://github.com/solodynamo">
       <h1><img class="img-circle" ng-src="app/logo2.png"></h1>
@@ -34,11 +43,11 @@
    
       <md-button ng-repeat-start="item in vm.menuItems" layout="column" layout-align="center center"
                  flex class="capitalize" ng-click="vm.selectItem(item)"
-                 ui-sref-active="md-warn" ui-sref="{{item.sref}}">
+                 ui-sref-active="md-warn" ui-sref="{{item.sref}}" style="">
           <div hide-sm hide-md class="md-tile-content">
               <i class="material-icons md-36">{{item.icon}}</i>
           </div>
-          <div class="md-tile-content">
+          <div class="md-tile-content md-primary md-hue-1">
               {{item.name}}
           </div>
       </md-button>
@@ -46,11 +55,11 @@
 </md-sidenav>
 
 <div layout="column" flex>
-    <md-toolbar layout="row" layout-align="center center">
+    <md-toolbar layout="row" layout-align="center center" id="header">
         
         <section layout-align="start center" layout-fill flex>
             <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu" flex="20">
-                <i class="material-icons">menu</i>
+                <i class="material-icons" id="menuIcon">menu</i>
                 
             </md-button>
         </section>
