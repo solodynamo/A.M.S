@@ -4,8 +4,6 @@ angular.module('BPIT')
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
-
-                      console.log("iside srareas");
     $stateProvider
       .state('home', {
         url: '',
@@ -21,24 +19,42 @@ angular.module('BPIT')
           title: 'Dashboard'
         }
       })
-    //   .state('home.profile', {
-    //     url: '/profile',
-    //     templateUrl: 'app/views/profile.html',
-    //     controller: 'ProfileController',
-    //     controllerAs: 'vm',
-    //     data: {
-    //       title: 'Profile'
-    //     }
-    //   })
-    //   .state('home.table', {
-    //     url: '/table',
-    //     controller: 'TableController',
-    //     controllerAs: 'vm',
-    //     templateUrl: 'app/views/table.html',
-    //     data: {
-    //       title: 'Table'
-    //     }
-    //   });
+      .state('home.placements', {
+        url: '/placements',
+        templateUrl: 'app/views/placements.html',
+        controller: 'PlacementController',
+        controllerAs: 'vm'
+      })
+      .state('home.examinations', {
+        url: '/examinations',
+        controller: 'ExaminationsController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/examinations.html'
+      })
+      .state('home.facilities', {
+        url: '/facilities',
+        controller: 'FacilitiesController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/facilities.html'
+      })
+      .state('home.departments', {
+        url: '/departments',
+        controller: 'DepartmentsController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/departments.html'
+      })
+      .state('home.studentlife', {
+        url: '/studentlife',
+        controller: 'StudentlifeController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/studentlife.html'
+      })
+      .state('home.recruitment', {
+        url: '/recruitment',
+        controller: 'RecruitmentController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/recruitment.html'
+      });
 
     $urlRouterProvider.otherwise('/dashboard');
 
